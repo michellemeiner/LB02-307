@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Projekt</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
+</head>
+<body>
+
+        
+
+<form name="Form" onsubmit="return validateForm()" >
+    <h2>Submit IT–Project</h2>
+    <h3>simple | efficient | reliable</h3>
+    <h6>A communication solution for Daniel Garavaldi. For future projects.</h6>
+
+    <div class="info">
+        <h4>Project Info</h4>
+        <div class="box">
+            <label>Project Name</label>
+            <input type="text" name="name" id="name">
+            <div class="error" id="nameErr"></div>
+        </div>
+        <div class="box">
+            <label> BZZ Class</label>
+            <select name="bzz" id="bzz">
+                <option>ME19B</option>
+                <option>ME19C</option>
+                <option>ME20A</option>
+                <option>ME20C</option>
+            </select>
+            <div class="error" id="bzzErr"></div>
+        </div>
+
+        <div class="box">
+            <label>GitHub Url</label>
+            <input type="text" name="GitHub" id="GitHub">
+            <div class="error" id="GitHubErr"></div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <h4>Contact</h4>
+        <div class="box">
+            <label>School Email</label>
+            <input type="text" name="email" id="email">
+            <div class="error" id="emailErr"></div>
+        </div>
+        <div class="box">
+            <label>Emergency Mobile Number</label>
+            <input type="text" name="mobile" maxlength="10" id="mobile">
+            <div class="error" id="mobileErr"></div>
+        </div>
+    </div>
+
+    <div class="review">
+        <h4>Review</h4>
+        <div class="box">
+            <label>This project was...</label>
+            <div class="form-inline" id="review">
+                <label><input type="radio" name="review" > Easy :))</label>
+                <label><input type="radio" name="review" > Hard :((</label>
+            </div>
+            <div class="error" id="reviewErr"></div>
+        </div>
+    </div>
+          
+    <div class="box">
+        <input type="submit" value="Submit">
+    </div>
+
+    <h5>powered by Michelle und Emanuel</h5>
+</form>
+
+
+</body>
+</html>
